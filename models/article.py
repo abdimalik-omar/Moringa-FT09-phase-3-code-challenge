@@ -96,8 +96,8 @@ if __name__ == '_main_':
     session = Session()
 
     # Create an author and a magazine
-    author = Author(name="J.K. Rowling", session=session)
-    magazine = Magazine(name="Fantasy Times", category="Fantasy", session=session)
+    author = Author(name="A.M. Omar", session=session)
+    magazine = Magazine(name="Oxford", category="Books", session=session)
 
     # Create an article
     try:

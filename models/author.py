@@ -58,17 +58,17 @@ if __name__ == '_main_':
 
     # Create a new author
     try:
-        new_author = Author(name="J.K. Rowling")
+        new_author = Author(name="A.M. Omar")
         session.add(new_author)
         session.commit()
         session.refresh(new_author)
         print(f"New Author ID: {new_author.id}, Name: {new_author.name}")
 
         # Create some magazines and articles for the author
-        magazine1 = Magazine(name="Fantasy Monthly")
-        magazine2 = Magazine(name="Literary Digest")
-        article1 = Article(title="The Wizarding World", author=new_author)
-        article2 = Article(title="Harry Potter's Legacy", author=new_author)
+        magazine1 = Magazine(name="Film Fest")
+        magazine2 = Magazine(name="Outtake")
+        article1 = Article(title="The Revolution", author=new_author)
+        article2 = Article(title="Percy Jackson-olympians", author=new_author)
 
         # Associate the magazines with the author
         new_author.magazines.extend([magazine1, magazine2])

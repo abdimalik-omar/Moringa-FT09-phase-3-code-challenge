@@ -84,12 +84,12 @@ if __name__ == '__main__':
 
     try:
         # Create example data
-        author1 = Author(name="J.K. Rowling")
-        author2 = Author(name="George R.R. Martin")
-        magazine1 = Magazine(name="Fantasy Monthly", category="Fantasy")
-        article1 = Article(title="The Wizarding World", magazine=magazine1, author=author1)
+        author1 = Author(name="A.M. Omar")
+        author2 = Author(name="Hamza A. Ridhwan")
+        magazine1 = Magazine(name="Oxford", category="Books")
+        article1 = Article(title="The Hunger Games", magazine=magazine1, author=author1)
         article2 = Article(title="Game of Thrones Insights", magazine=magazine1, author=author2)
-        article3 = Article(title="Fantasy Writing Tips", magazine=magazine1, author=author1)
+        article3 = Article(title="Percy Jackson Insights", magazine=magazine1, author=author1)
 
         # Add data to the session and commit
         session.add_all([author1, author2, magazine1, article1, article2, article3])
